@@ -1,21 +1,21 @@
 {
-    "name": "playlist",
+    "name": "todolist_project",
     "version": "1.0.0",
-    "description": "learn node.js by setting up a application",
+    "description": "learn node.js express by setting up a application",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/DevDouja/node.js_course.git"
+        "url": "git+https://github.com/DevDouja/node.js_practices.git"
     },
     "author": "khadija",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/DevDouja/node.js_course/issues"
+        "url": "https://github.com/DevDouja/node.js_practices/issues"
     },
-    "homepage": "https://github.com/DevDouja/node.js_course#readme",
+    "homepage": "https://github.com/DevDouja/node.js_practices#readme",
     "dependencies": {
         "body-parser": "^1.19.0",
         "ejs": "^3.1.2",
