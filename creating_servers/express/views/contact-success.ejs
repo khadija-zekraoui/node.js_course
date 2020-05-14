@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <link rel="stylesheet" href="/assets/form.css" />
+    </head>
+    <body>
+        <%- include ('partials/nav'); %>
+        <h1>Contact Us!</h1>
+        <p>Contact the collest cats on the world right here ...</p>
+        <p>Thanks for getting in touch</p>
+        <p>You contacted <%= data.person %> in the <%= data.department %> department</p>
+        <p>We will reply to you at <%= data.email %></p>
+    </body>
+</html>

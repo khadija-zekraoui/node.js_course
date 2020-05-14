@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="/assets/styles.css" />
+        <link rel="stylesheet" href="/assets/form.css" />
+    </head>
+    <body>
+        <%- include ('partials/nav'); %>
+        <h1>Contact Us!</h1>
+        <p>Contact the collest cats on the world right here ...</p>
+        <p><%= qs.dept %></p>
+        <div>
+            <form id="contact-form" method="POST" , action="/contact">
+                <label for="fname"> Name </label>
+                <input type="text" id="fname" name="person" placeholder="The name of contact.." value="<%= qs.person %>" />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." value="<%= qs.email %>" />
+
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" placeholder="Department of the contact.." value="<%= qs.dept %>" />
+
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option value="spain">Spain</option>
+                    <option value="morocco">Morocco</option>
+                    <option value="italy">Italy</option>
+                </select>
+
+                <input type="submit" value="Submit" />
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+* The express framework is the most common framework used for developing Node js applications. The express framework 
+  is built on top of the node.js framework and helps in fast-tracking development of server-based applications.
+* Routes are used to divert users to different parts of the web applications based on the request made. The response 
+  for each route can be varied depending on what needs to be shown to the user.
+* Templates can be used to inject content in an efficient manner. Jade is one of the most popular templating engines
+  used in Node.js applications.
