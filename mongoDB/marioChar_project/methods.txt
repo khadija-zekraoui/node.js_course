@@ -1,0 +1,12 @@
+save() --> save one record
+
+find(creterias) --> find all the records with criterias
+findOne(creterias) --> find the first record found with creterias
+
+instance.remove() --> remove the instance of the record (one record)
+Model.remove(creterias) --> remove all the records with creterias in this Model(collection)
+Model.findOneAndRemove(creterias) --> remove the first record found with creterias
+
+instance.update() -->  update the instance of the record (one record)
+Model.update(creterias) --> update all the records with creterias in this Model(collection)
+Model.findOneAndUpdate(creterias) --> update the first record found with creterias
