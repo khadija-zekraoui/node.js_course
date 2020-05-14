@@ -1,0 +1,13 @@
+** What  exactly is the Express Router? It is a mini express application without all the bells
+and whistles of an express application, just the routing stuff. Let's take a look at exactly
+what this means. We'll go through each section of our site and use different features 
+of the Router.
+
+** Using the Router, we are allowed to make our applications more modular and flexible than
+ever before by creating multiple instances of the Router and applying them
+accordingly
+
+** Route middleware: in Express is a way to do something before a request is processed.
+This could be things like checking if a user is authenticated, logging data for 
+analytics, or anything else we'd like to do before we actually spit out
+information to our user.
