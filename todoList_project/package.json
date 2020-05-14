@@ -1,0 +1,27 @@
+{
+    "name": "playlist",
+    "version": "1.0.0",
+    "description": "learn node.js by setting up a application",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DevDouja/node.js_course.git"
+    },
+    "author": "khadija",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/DevDouja/node.js_course/issues"
+    },
+    "homepage": "https://github.com/DevDouja/node.js_course#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "ejs": "^3.1.2",
+        "express": "^4.17.1",
+        "bootstrap": "^4.4.1",
+        "jquery": "3.4.1",
+        "popper.js": "^1.16.1"
+    }
+}
