@@ -21,6 +21,13 @@ app.use(bodyParser.json());
 //say to the express server to use these routes.
 app.use("/api", routes);
 //listen for requests
+
+//error handling middleware
+app.use(function (err, req, res, next) {
+    //console.log(err);
+    res.status(422).send({ error: err.message });
+});
+
 app.listen(process.env.port || 4000, () => {
     console.log("Server listening for requests");
 });

@@ -1,0 +1,1 @@
+function clearFog(str) {}
