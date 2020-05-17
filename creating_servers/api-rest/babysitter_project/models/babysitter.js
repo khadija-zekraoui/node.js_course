@@ -1,6 +1,17 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
+//create geolocation Schema, structure from GeoJSON
+const GeoSchema = new Schema({
+    type: {
+        type: String,
+        default: "Point",
+    },
+    coordinates: {
+        type: [Number],
+        index: "2dsphere",
+    },
+});
 //create a babysitter Schema and model
 const babysitterSchema = new Schema({
     name: {
@@ -14,8 +25,7 @@ const babysitterSchema = new Schema({
         type: Boolean,
         default: false,
     },
-
-    //add in geo location
+    geometry: GeoSchema,
 });
 
 const Babysitter = mongoose.model("babysitter", babysitterSchema);

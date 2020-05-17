@@ -4,9 +4,11 @@ const routes = require("./routes/api");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
+//ser mongoose Promise(is deprecated) to global promise
+mongoose.Promise = global.Promise;
 //Set up default mongoose connection
 var mongoDB = "mongodb://127.0.0.1/babysittergo";
-mongoose.connect(mongoDB, { useNewUrlParser: true });
+mongoose.connect(mongoDB, { useNewUrlParser: true, useUnifiedTopology: true });
 //Get the default connection
 var db = mongoose.connection;
 //Bind connection to error event (to get notification of connection errors)
