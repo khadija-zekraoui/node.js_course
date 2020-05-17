@@ -4,7 +4,10 @@ const routes = require("./routes/api");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 
-//ser mongoose Promise(is deprecated) to global promise
+//set up express app
+const app = express();
+
+//set mongoose Promise(is deprecated) to global promise
 mongoose.Promise = global.Promise;
 //Set up default mongoose connection
 var mongoDB = "mongodb://127.0.0.1/babysittergo";
@@ -14,8 +17,8 @@ var db = mongoose.connection;
 //Bind connection to error event (to get notification of connection errors)
 db.on("error", console.error.bind(console, "MongoDB connection error:"));
 
-//set up express app
-const app = express();
+//set static files middelware
+app.use(express.static("public"));
 
 //set body-parser as a middelware
 app.use(bodyParser.json());
