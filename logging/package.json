@@ -1,0 +1,24 @@
+{
+  "name": "logging",
+  "version": "1.0.0",
+  "description": "learn logging levels with pino",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pino",
+    "node.js",
+    "javascript"
+  ],
+  "author": "khadija",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-pino-logger": "^5.0.0",
+    "pino": "^6.3.2"
+  },
+  "devDependencies": {
+    "pino-pretty": "^4.0.0"
+  }
+}
